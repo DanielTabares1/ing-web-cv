@@ -15,6 +15,8 @@ const config: Config = {
       },
       colors: {
         "main-bg": "#F0F0F6",
+        "cv-yellow": "#FFB400",
+        "gray-text-l": "#767676",
       },
     },
   },

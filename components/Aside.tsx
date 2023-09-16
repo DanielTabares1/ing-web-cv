@@ -1,3 +1,5 @@
+import { AsideContainer } from "./SkillsContainer";
+import { Skill } from "./Skill";
 
 
 const Aside = () => {
@@ -9,7 +11,9 @@ const Aside = () => {
             <div></div>
             <div></div>
             <div></div>
-            <div></div>
+
+            <AsideContainer />
+            
 
         </div>
     );
