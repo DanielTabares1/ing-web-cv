@@ -19,7 +19,7 @@ const PercentBar = ({text, percent}: PercentBarProperties) => {
             </div>
             <div>
                 <div className="h-2 border border-cv-yellow rounded-full p-[2px]">
-                    <div className={`border border-cv-yellow bg-cv-yellow h-full`} style={{width:218/100*percent}}></div>
+                    <div className={`border border-cv-yellow bg-cv-yellow h-full`} style={{width:186/100*percent}}></div>
                 </div>
             </div>
         
