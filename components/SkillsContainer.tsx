@@ -1,21 +1,23 @@
 import { Skill } from "./Skill";
 
-const AsideContainer = () => {
+const SkillContainer = () => {
 
-    return(
-        
-        <div className="flex flex-col gap-4">
+    return (
+
+        <div className="flex flex-col">
             <div>
                 <h4 className="font-semibold">Extra Skills</h4>
                 <Skill text="Docker" />
                 <Skill text="NextJS" />
-                <Skill text="Java, Spring"/> 
+                <Skill text="Ansible" />
+                <Skill text="Linux" />
+                <Skill text="Git, Github" />
+                <Skill text="Fast Learning" />
             </div>
-            <hr />
         </div>
 
     );
 
 };
 
-export { AsideContainer };
+export { SkillContainer };
