@@ -1,4 +1,4 @@
-import { AsideContainer } from "./SkillsContainer";
+import { SkillContainer } from "./SkillsContainer";
 import { PercentBar } from "./PercentBar";
 import { ContactItem } from "./ContactItem";
 import Image from "next/image";
@@ -6,24 +6,25 @@ import Image from "next/image";
 const Aside = () => {
 
     return (
-        <div className="h-screen flex flex-col w-64 bg-white p-8 gap-5">
+        <div className="h-screen flex flex-col w-96 bg-white px-6 py-3 gap-3.5">
 
             <div className="flex flex-col items-center gap-6">
                 <div>
-                    <Image src='/profile.jpg' alt="profile" width={150} height={150} className="rounded-full"  />
-                </div>   
+                    <Image src='/profile.jpg' alt="profile" width={150} height={150} className="rounded-full" />
+                </div>
                 <div className="flex flex-col items-center gap-1">
                     <h4 className="font-semibold">Daniel Tabares</h4>
-                    <p className="text-gray-text-l">Full Stack Developer</p>
+                    <p className="text-gray-text-l">Estudiante Ing de Sistemas</p>
                 </div>
             </div>
 
             <hr />
             <div>
                 <ContactItem title="Age" value="21" />
-                <ContactItem title="Residence" value="BD" />
-                <ContactItem title="Freelance" value="Available" valColor />
-                <ContactItem title="Address" value="Dhaka,Bagladesh" />
+                <ContactItem title="Residence" value="Medellín - CO" />
+                <ContactItem title="phone" value="+57 3222574446" />
+                <ContactItem title="E-mail" value="serabatdaniel@outlook.com" valColor />
+                <ContactItem title="github" value="github.com/DanielTabares1" valColor/>
             </div>
 
             <hr />
@@ -41,14 +42,14 @@ const Aside = () => {
                 <PercentBar text="HTML" percent={90} />
                 <PercentBar text="JavaScript" percent={60} />
                 <PercentBar text="C#" percent={40} />
+
             </div>
 
             <hr />
-            <AsideContainer />
+            <SkillContainer />
 
         </div>
     );
-
 };
 
 export { Aside };
