@@ -3,7 +3,6 @@ import { PercentBar } from "./PercentBar";
 import { ContactItem } from "./ContactItem";
 import Image from "next/image";
 
-
 const Aside = () => {
 
     return (
@@ -11,8 +10,8 @@ const Aside = () => {
 
             <div className="flex flex-col items-center gap-6">
                 <div>
-                    <Image src='/images/profile.jpg' alt="profile" width={150} height={150} className="rounded-full debug" />
-                </div>
+                    <Image src='/profile.jpg' alt="profile" width={150} height={150} className="rounded-full"  />
+                </div>   
                 <div className="flex flex-col items-center gap-1">
                     <h4 className="font-semibold">Daniel Tabares</h4>
                     <p className="text-gray-text-l">Full Stack Developer</p>
