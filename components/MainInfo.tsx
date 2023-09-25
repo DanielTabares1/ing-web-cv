@@ -1,11 +1,12 @@
 import Image from "next/image";
 import { KnowledgeCard } from "./KnowledgeCard";
 import { MainButton } from "./MainButton";
+import { MainTitle } from "./MainTitle";
 
 
 const MainInfo = () => {
     return(
-        <div className="h-full debug w-full flex flex-col gap-12">
+        <div className="h-full w-full flex flex-col gap-12">
 
             <div className="flex justify-between items-center px-12 bg-white">
                 <div className="flex flex-col gap-7 h-max">
@@ -25,8 +26,7 @@ const MainInfo = () => {
 
 
             <div className="flex flex-col items-center gap-7">
-                <h2 className="text-5xl font-semibold">My Knowledge</h2>
-                <span className="text-gray-text-l text-center px-52">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, harum error necessitatibus commodi cupiditate officiis! Illo id aperiam cum voluptate, eos eum repellat tempora aliquid nam inventore facilis asperiores veniam.</span>
+                <MainTitle title="My Knowledge" description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, harum error necessitatibus commodi cupiditate officiis! Illo id aperiam cum voluptate, eos eum repellat tempora aliquid nam inventore facilis asperiores veniam."/>                
                 <div className="flex flex-wrap justify-between gap-8">
                     <KnowledgeCard image="/next.svg" title="Web Development" content="Blog, E-Commerce"/>
                     <KnowledgeCard image="/next.svg" title="Web Development" content="Blog, E-Commerce"/>
@@ -39,14 +39,19 @@ const MainInfo = () => {
 
 
             <div>
-
+                <MainTitle title="Education" description="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum" />
             </div>
             
+            
 
-            <div></div>
+            <div>
+                <MainTitle title="Portfolio" description="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum" />
+            </div>
 
 
-            <div></div>
+            <div className="bg-white w-full flex justify-center items-center h-12">
+                <span className="text-gray-text-l">2021 All Rights Reserved.Ojjomedia</span>
+            </div>
         </div>
     );
 };
