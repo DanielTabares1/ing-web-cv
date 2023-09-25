@@ -6,7 +6,7 @@ import Image from "next/image";
 const Aside = () => {
 
     return (
-        <div className="h-screen flex flex-col w-96 bg-white px-6 py-3 gap-3.5">
+        <div className="h-screen flex fixed top-0 flex-col w-80 bg-white px-6 py-3 gap-3.5">
 
             <div className="flex flex-col items-center gap-6">
                 <div>
