@@ -1,6 +1,6 @@
-import { SkillContainer } from "./SkillsContainer";
 import { PercentBar } from "./PercentBar";
 import { ContactItem } from "./ContactItem";
+import { Skill } from "./Skill";
 import Image from "next/image";
 
 const Aside = () => {
@@ -45,8 +45,18 @@ const Aside = () => {
 
             </div>
 
-            <hr />
-            <SkillContainer />
+            <hr />            
+            <div className="flex flex-col">
+                <div>
+                    <h4 className="font-semibold">Extra Skills</h4>
+                    <Skill text="Docker" />
+                    <Skill text="NextJS" />
+                    <Skill text="Ansible" />
+                    <Skill text="Linux" />
+                    <Skill text="Git, Github" />
+                    <Skill text="Fast Learning" />
+                </div>
+            </div>
 
         </div>
     );
