@@ -3,6 +3,7 @@ import { KnowledgeCard } from "./KnowledgeCard";
 import { MainButton } from "./MainButton";
 import { MainTitle } from "./MainTitle";
 import { EducationCard } from "./EducationCard";
+import { PortfolioCard } from "./PortfolioCard";
 
 
 const MainInfo = () => {
@@ -10,7 +11,7 @@ const MainInfo = () => {
         <div className="h-full w-full flex flex-col gap-12">
 
             <div className="flex justify-between items-center px-12 bg-white">
-                <div className="flex flex-col gap-7 h-max">
+                <div className="flex flex-col gap-7 h-max py-12">
                     <div>
                         <h1 className="text-4xl">I'm Daniel Tabares</h1>
                         <h1 className="text-4xl"><span className="text-cv-yellow">Full Stack</span> Developer</h1>
@@ -21,7 +22,7 @@ const MainInfo = () => {
                 </div>
 
                 <div className="h-max">
-                    <Image src="/favicon.ico" width={400} height={400} alt="Foto" />
+                    <Image src="/profile.jpg" width={400} height={400} alt="Foto" />
                 </div>
             </div>
 
@@ -64,8 +65,16 @@ const MainInfo = () => {
 
 
 
-            <div>
+            <div className="flex flex-col w-fit flex-auto items-center gap-7">
                 <MainTitle title="Portfolio" description="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum" />
+                <div className="overflow-x-auto w-[1401px]">
+                    <div className="flex gap-20"> 
+                        <PortfolioCard />
+                        <PortfolioCard />
+                        <PortfolioCard />
+                        <PortfolioCard />
+                    </div> 
+                </div>                               
             </div>
 
 
