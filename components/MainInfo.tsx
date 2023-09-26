@@ -13,7 +13,7 @@ const MainInfo = () => {
             <div className=" flex justify-between items-center px-12 bg-white">
                 <div className="flex flex-col gap-7 h-max py-12">
                     <div>
-                        <h1 className="text-4xl">I'm Daniel Tabares</h1>
+                        <h1 className="text-4xl">{`I'm Daniel Tabares`}</h1>
                         <h1 className="text-4xl"><span className="text-cv-yellow">Full Stack</span> Developer</h1>
                     </div>
 
