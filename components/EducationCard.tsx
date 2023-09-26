@@ -9,12 +9,12 @@ interface EducationCardProps {
 const EducationCard = ({ title, charge, Date, course, description }: EducationCardProps) => {
 
     return (
-        <div className="flex h-48 items-center gap-20">
-            <div className="h-full flex flex-col w-[30rem] justify-center gap-7">
+        <div className="flex h-48 items-center gap-16">
+            <div className="h-full flex flex-col w-[30rem] justify-center gap-6">
                 <div>
                     <h3 className="font-semibold text-2xl">{title}</h3>
                 </div>
-                <div className="flex gap-4 items-center">
+                <div className="flex gap-2 items-center">
                     <h4>{charge}</h4>
                     <h4 className="bg-cv-yellow px-2 py-0.5 text-white">{Date}</h4>
                 </div>

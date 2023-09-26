@@ -8,9 +8,9 @@ import { PortfolioCard } from "./PortfolioCard";
 
 const MainInfo = () => {
     return (
-        <div className="h-full w-full flex flex-col gap-12">
+        <div className="h-full w-full flex flex-col gap-12 ml-80 mr-20 px-20">
 
-            <div className="flex justify-between items-center px-12 bg-white">
+            <div className=" flex justify-between items-center px-12 bg-white">
                 <div className="flex flex-col gap-7 h-max py-12">
                     <div>
                         <h1 className="text-4xl">I'm Daniel Tabares</h1>
@@ -42,7 +42,7 @@ const MainInfo = () => {
 
             <div className="flex flex-col items-center gap-7">
                 <MainTitle title="Education" description="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum" />
-                <div className="flex flex-col px-16 bg-white">
+                <div className="flex flex-col px-12 bg-white">
                     <EducationCard
                         title="University of Toronto"
                         charge="Student"
@@ -67,7 +67,7 @@ const MainInfo = () => {
 
             <div className="flex flex-col w-fit flex-auto items-center gap-7">
                 <MainTitle title="Portfolio" description="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum" />
-                <div className="overflow-x-auto w-[1401px]">
+                <div className="overflow-x-auto w-[1341px]">
                     <div className="flex gap-20"> 
                         <PortfolioCard />
                         <PortfolioCard />
