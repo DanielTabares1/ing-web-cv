@@ -4,7 +4,7 @@ import { Links } from "@/components/Links";
 
 const Home = () => {
   return (
-    <main className="flex bg-main-bg gap-7">
+    <main className="flex bg-main-bg gap-7 h-full">
 
       <Aside />
       <MainInfo />
