@@ -1,16 +1,11 @@
-
-
 interface PercentBarProperties {
-    text:string;
+    text: string;
     percent: number;
 }
 
+const PercentBar = ({ text, percent }: PercentBarProperties) => {
 
-
-const PercentBar = ({text, percent}: PercentBarProperties) => {
-
-    return(
-
+    return (
         <div className="w-full flex flex-col gap-1">
 
             <div className="flex justify-between text-gray-text-l text-sm font">
@@ -19,15 +14,12 @@ const PercentBar = ({text, percent}: PercentBarProperties) => {
             </div>
             <div>
                 <div className="h-2 border border-cv-yellow rounded-full p-[2px]">
-                    <div className={`border border-cv-yellow bg-cv-yellow h-full`} style={{width:186/100*percent}}></div>
+                    <div className={`border border-cv-yellow bg-cv-yellow h-full`} style={{ width: (272-6) / 100 * percent }}></div>
                 </div>
             </div>
-        
+
         </div>
-
     );
-
-
-}
+};
 
 export { PercentBar };

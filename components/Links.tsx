@@ -6,7 +6,7 @@ const Links = () => {
     return(
 
         
-        <div className="h-screen w-20 bg-white flex flex-col items-center gap-3 p-4">
+        <div className="h-screen w-20 bg-white flex flex-col items-center gap-3 p-4 fixed top-0 right-0">
             <h4 className="font-semibold">Links</h4>            
             <Icon Icon={FaFacebookF} src="https://www.google.com"/>
             <Icon Icon={PiInstagramLogoFill} src="https://www.google.com"/>
