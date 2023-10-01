@@ -69,10 +69,14 @@ const MainInfo = () => {
                 <MainTitle title="Portfolio" description="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum" />
                 <div className="overflow-x-auto w-[1341px]">
                     <div className="flex gap-20"> 
-                        <PortfolioCard />
-                        <PortfolioCard />
-                        <PortfolioCard />
-                        <PortfolioCard />
+                        <PortfolioCard title="How To Make Web Templates" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna
+" link="https://www.google.com"/>  
+                        <PortfolioCard title="How To Make Web Templates" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna
+" link="https://www.google.com"/>
+                        <PortfolioCard title="How To Make Web Templates" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna
+" link="https://www.google.com"/>
+                        <PortfolioCard title="How To Make Web Templates" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna
+" link="https://www.google.com"/>                     
                     </div> 
                 </div>                               
             </div>
