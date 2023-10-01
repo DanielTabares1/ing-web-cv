@@ -22,7 +22,7 @@ const MainInfo = () => {
                 </div>
 
                 <div className="h-max">
-                    <Image src="/profile.jpg" width={400} height={400} alt="Foto" />
+                    <Image src="/images/profile.jpg" width={400} height={400} alt="Foto" />
                 </div>
             </div>
 
