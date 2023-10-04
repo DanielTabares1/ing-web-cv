@@ -23,8 +23,7 @@ const Aside = () => {
                 <ContactItem title="Age" value="21" />
                 <ContactItem title="Residence" value="Medellín - CO" />
                 <ContactItem title="phone" value="+57 3222574446" />
-                <ContactItem title="E-mail" value="serabatdaniel@outlook.com" valColor />
-                <ContactItem title="github" value="github.com/DanielTabares1" valColor/>
+                <ContactItem title="E-mail" value="serabatdaniel@outlook.com" valColor />                
             </div>
 
             <hr />
