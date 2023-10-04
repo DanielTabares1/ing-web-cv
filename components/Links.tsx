@@ -12,7 +12,7 @@ const Links = () => {
             <Icon Icon={FaTwitter} src="https://twitter.com/pavas_taba15169"/>
             <Icon Icon={FaLinkedinIn} src="https://www.linkedin.com/in/daniel-tabares-pavas"/>
             <Icon Icon={FaYoutube} src="https://www.youtube.com/channel/UCSRcWbmNHEDl1pxe3HLSdTw"/>
-            <Icon Icon={TbBrandGithubFilled} src="github.com/DanielTabares1"/>       
+            <Icon Icon={TbBrandGithubFilled} src="https://github.com/DanielTabares1"/>       
         </div>
     );
 };
