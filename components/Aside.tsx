@@ -41,7 +41,7 @@ const Aside = () => {
                 <PercentBar text="Python" percent={50} />
                 <PercentBar text="HTML" percent={90} />
                 <PercentBar text="JavaScript" percent={60} />
-                <PercentBar text="C#" percent={40} />
+                <PercentBar text="C#" percent={50} />
 
             </div>
 

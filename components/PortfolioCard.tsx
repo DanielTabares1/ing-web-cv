@@ -11,7 +11,7 @@ interface PortfolioCardProps {
 const PortfolioCard = ({image = "/portfolio.svg", title, description, link}: PortfolioCardProps) => {
     return(
         <div className='flex flex-col gap-6 items-center'>
-            <Image src={image} height={400} width={400} alt="PortfolioImage"/>
+            <Image src={image} height={400} width={400} alt="PortfolioImage" className='object-cover h-[400px]'/>
             <div className='flex flex-col w-[400px] gap-2 p-5'>
                 <h3 className='text-2xl'>{title}</h3>
                 <span className='text-gray-text-l'>{description}</span>
