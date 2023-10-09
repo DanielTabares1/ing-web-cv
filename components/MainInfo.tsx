@@ -4,9 +4,16 @@ import { MainButton } from "./MainButton";
 import { MainTitle } from "./MainTitle";
 import { EducationCard } from "./EducationCard";
 import { PortfolioCard } from "./PortfolioCard";
+import { HireMe } from "./Dialogs/HireMe";
 
 
 const MainInfo = () => {
+    const dialogOpen = false;
+
+    const handleHireMe = () => {
+        console.log("Hire me");
+    };
+
     return (
         <div className="h-full w-full flex flex-col gap-12 ml-80 mr-20 px-20">
 
@@ -18,7 +25,7 @@ const MainInfo = () => {
                     </div>
 
                     <span className="text-gray-text-l w-[500px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque corporis tempore illum quibusdam reiciendis, quo odio exercitationem dolor qui doloribus debitis repellendus ex fuga doloremque earum sed eius neque laudantium!</span>
-                    <MainButton />
+                    <MainButton handleClick={handleHireMe}/>
                 </div>
 
                 <div className="h-max">
@@ -85,6 +92,9 @@ const MainInfo = () => {
             <div className="bg-white w-full flex justify-center items-center h-12">
                 <span className="text-gray-text-l">2021 All Rights Reserved.Ojjomedia</span>
             </div>
+
+
+            <HireMe open={dialogOpen}/>
         </div>
     );
 };
