@@ -26,7 +26,7 @@ const MainInfo = () => {
                         <h1 className="text-4xl"><span className="text-cv-yellow">Full Stack</span> Developer</h1>
                     </div>
 
-                    <span className="text-gray-text-l w-[500px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque corporis tempore illum quibusdam reiciendis, quo odio exercitationem dolor qui doloribus debitis repellendus ex fuga doloremque earum sed eius neque laudantium!</span>
+                    <span className="text-gray-text-l w-[500px]">I am a Systems engineering student from Medellín, Colombia. I work at the Integrated Systems Laboratory (LIS) on University of Antioquia as Technical manager and leader of the team of programming assistants.</span>
                     <MainButton handleClick={handleHireMe} title="HIRE ME" Icono={MdArrowForward}/>
                 </div>
 
