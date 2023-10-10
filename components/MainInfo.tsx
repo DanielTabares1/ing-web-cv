@@ -4,9 +4,18 @@ import { MainButton } from "./MainButton";
 import { MainTitle } from "./MainTitle";
 import { EducationCard } from "./EducationCard";
 import { PortfolioCard } from "./PortfolioCard";
+import { HireMe } from "./Dialogs/HireMe";
+import { useState } from "react";
+import { MdArrowForward } from "react-icons/md";
 
 
 const MainInfo = () => {
+    const [dialogOpen, setOpen] = useState<boolean>(false);
+
+    const handleHireMe = () => {
+        setOpen(true);
+    };
+
     return (
         <div className="h-full w-full flex flex-col gap-12 ml-80 mr-20 px-20">
 
@@ -17,8 +26,8 @@ const MainInfo = () => {
                         <h1 className="text-4xl"><span className="text-cv-yellow">Full Stack</span> Developer</h1>
                     </div>
 
-                    <span className="text-gray-text-l w-[500px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque corporis tempore illum quibusdam reiciendis, quo odio exercitationem dolor qui doloribus debitis repellendus ex fuga doloremque earum sed eius neque laudantium!</span>
-                    <MainButton />
+                    <span className="text-gray-text-l w-[500px]">I am a Systems engineering student from Medellín, Colombia. I work at the Integrated Systems Laboratory (LIS) on University of Antioquia as Technical manager and leader of the team of programming assistants.</span>
+                    <MainButton handleClick={handleHireMe} title="HIRE ME" Icono={MdArrowForward}/>
                 </div>
 
                 <div className="h-max">
@@ -28,63 +37,54 @@ const MainInfo = () => {
 
 
             <div className="flex flex-col items-center gap-7">
-                <MainTitle title="My Knowledge" description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, harum error necessitatibus commodi cupiditate officiis! Illo id aperiam cum voluptate, eos eum repellat tempora aliquid nam inventore facilis asperiores veniam." />
+                <MainTitle title="My Knowledge" description="I enjoy everything related to technology, systems and programming, and also sharing these topics with others by teaching; By the way I would like to work not only as engineer and software developer but also as teacher because of I believe that the most you explain, the most you learn." />
                 <div className="flex flex-wrap justify-between gap-8">
-                    <KnowledgeCard image="/images/icons/coding.svg" title="Web Development" content="Blog, E-Commerce" />
-                    <KnowledgeCard image="/images/icons/design.svg" title="UI/UX Design" content="Mobile app, website design" />
-                    <KnowledgeCard image="/images/icons/sound.svg" title="Sound Design" content="Voice Over, Beat Making" />
-                    <KnowledgeCard image="/images/icons/games.svg" title="Game Design" content="Character Design, Props & Objects" />
-                    <KnowledgeCard image="/images/icons/photo.svg" title="Photography" content="Portrait, Product Photography" />
-                    <KnowledgeCard image="/next.svg" title="Web Development" content="Blog, E-Commerce" />
+                    <KnowledgeCard image="/images/icons/web.svg" title="Web Development" content="FrontEnd, Deployment" />
+                    <KnowledgeCard image="/images/icons/backend.svg" title="Backend Development" content="APIs, Microservices" />
+                    <KnowledgeCard image="/images/icons/server.svg" title="Server Management" content="Virtualization, Containers, Proxmox" />
+                    <KnowledgeCard image="/images/icons/games.svg" title="VideoGame Development" content="Game programming, Unity" />
+                    <KnowledgeCard image="/images/icons/linux.svg" title="OS & Linux" content="Terminal, Tools, Software, OpenSource" />
                 </div>
             </div>
 
 
             <div className="flex flex-col items-center gap-7">
-                <MainTitle title="Education" description="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum" />
+                <MainTitle title="Education" description="I am a dedicated student committed to my professional development, a knowledge enthusiast and an eager learner." />
                 <div className="flex flex-col px-12 bg-white">
                     <EducationCard
-                        title="University of Toronto"
+                        title="Universidad de Antioquia"
                         charge="Student"
-                        Date="Jan 1016 - Dec 2021"
-                        course="Certificate of web training" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et pellentesque. Molestie risus enim neque eget dui." />
-                    <hr />
+                        Date="Jun 2019 - Present"
+                        course="Systems Engineering Career" description="Through this program, I have delved into the world of technology and computer science, gaining knowledge in programming, system design, databases, networks, cybersecurity, and project management." />
+                    <hr />                    
                     <EducationCard
-                        title="University of Toronto"
+                        title="Felix María Restrepo School " 
                         charge="Student"
-                        Date="Jan 1016 - Dec 2021"
-                        course="Certificate of web training" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et pellentesque. Molestie risus enim neque eget dui." />
-                    <hr />
-                    <EducationCard
-                        title="University of Toronto"
-                        charge="Student"
-                        Date="Jan 1016 - Dec 2021"
-                        course="Certificate of web training" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et pellentesque. Molestie risus enim neque eget dui." />
+                        Date="Jan 2012 - Nov 2018"
+                        course="High School Degree" description="This period provided me with a strong educational foundation, fostering problem-solving, teamwork, and time management skills, all of which have been invaluable in my ongoing education." />
                 </div>
             </div>
 
 
 
             <div className="flex flex-col w-fit flex-auto items-center gap-7">
-                <MainTitle title="Portfolio" description="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum" />
+                <MainTitle title="Portfolio" description="I enjoy harnessing my creativity to approach and solve problems innovatively." />
                 <div className="overflow-x-auto w-[1341px]">
                     <div className="flex gap-20"> 
-                        <PortfolioCard title="How To Make Web Templates" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna
-" link="https://www.google.com"/>  
-                        <PortfolioCard title="How To Make Web Templates" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna
-" link="https://www.google.com"/>
-                        <PortfolioCard title="How To Make Web Templates" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna
-" link="https://www.google.com"/>
-                        <PortfolioCard title="How To Make Web Templates" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna
-" link="https://www.google.com"/>                     
+                        <PortfolioCard image="/images/portfolio/mision02.png" title="Mision 02 - Camino a la calidad" description="A Video Game developed in Unity. The game intends to teach the importance of the accreditation process of higher education institutions in Colombia."
+link="https://github.com/Sofito-code/Proyecto-integrador-1"/>  
+                        <PortfolioCard image="/images/portfolio/next-cv.png" title="NextJS & Tailwind CV" description="A Web FrontEnd project developed for Web Engineering subject. Using NextJS, TailWind, ReactIcons and deployed in Vercel App" link="https://github.com/DanielTabares1/ing-web-cv"/>                  
                     </div> 
                 </div>                               
             </div>
 
 
             <div className="bg-white w-full flex justify-center items-center h-12">
-                <span className="text-gray-text-l">2021 All Rights Reserved.Ojjomedia</span>
+                <span className="text-gray-text-l">Privacy Statement: This resume contains confidential information and should only be used for employment evaluation purposes. </span>
             </div>
+
+
+            <HireMe open={dialogOpen} setDialogOpen={setOpen}/>
         </div>
     );
 };
