@@ -5,13 +5,14 @@ import { MainTitle } from "./MainTitle";
 import { EducationCard } from "./EducationCard";
 import { PortfolioCard } from "./PortfolioCard";
 import { HireMe } from "./Dialogs/HireMe";
+import { useState } from "react";
 
 
 const MainInfo = () => {
-    const dialogOpen = false;
+    const [dialogOpen, setOpen] = useState<boolean>(false);
 
     const handleHireMe = () => {
-        console.log("Hire me");
+        setOpen(true);
     };
 
     return (
@@ -94,7 +95,7 @@ const MainInfo = () => {
             </div>
 
 
-            <HireMe open={dialogOpen}/>
+            <HireMe open={dialogOpen} setDialogOpen={setOpen}/>
         </div>
     );
 };
