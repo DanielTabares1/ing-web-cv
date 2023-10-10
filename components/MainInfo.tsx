@@ -4,9 +4,18 @@ import { MainButton } from "./MainButton";
 import { MainTitle } from "./MainTitle";
 import { EducationCard } from "./EducationCard";
 import { PortfolioCard } from "./PortfolioCard";
+import { HireMe } from "./Dialogs/HireMe";
+import { useState } from "react";
+import { MdArrowForward } from "react-icons/md";
 
 
 const MainInfo = () => {
+    const [dialogOpen, setOpen] = useState<boolean>(false);
+
+    const handleHireMe = () => {
+        setOpen(true);
+    };
+
     return (
         <div className="h-full w-full flex flex-col gap-12 ml-80 mr-20 px-20">
 
@@ -17,8 +26,8 @@ const MainInfo = () => {
                         <h1 className="text-4xl"><span className="text-cv-yellow">Full Stack</span> Developer</h1>
                     </div>
 
-                    <span className="text-gray-text-l w-[500px]">I am a Systems engineering student from Medellín, Colombia. I work at the Integrated Systems Laboratory (LIS) on University of Antioquia as Technical manager and leader of the team of programming assistants.</span>
-                    <MainButton />
+                    <span className="text-gray-text-l w-[500px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque corporis tempore illum quibusdam reiciendis, quo odio exercitationem dolor qui doloribus debitis repellendus ex fuga doloremque earum sed eius neque laudantium!</span>
+                    <MainButton handleClick={handleHireMe} title="HIRE ME" Icono={MdArrowForward}/>
                 </div>
 
                 <div className="h-max">
@@ -73,6 +82,9 @@ link="https://github.com/Sofito-code/Proyecto-integrador-1"/>
             <div className="bg-white w-full flex justify-center items-center h-12">
                 <span className="text-gray-text-l">Privacy Statement: This resume contains confidential information and should only be used for employment evaluation purposes. </span>
             </div>
+
+
+            <HireMe open={dialogOpen} setDialogOpen={setOpen}/>
         </div>
     );
 };
